@@ -10,7 +10,7 @@
 + Đầu Ra : Tiền lương của nhân viên
 */
 document.getElementById('tinhLuong').onclick = function () {
-    var soNgay = document.getElementById('soNgay').value;
+    var soNgay =Number(document.getElementById('soNgay').value);
     var tienLuong = 0;
     tienLuong = soNgay * 100000;
     document.getElementById('tienLuong').innerHTML = 'Tổng lương là ' + tienLuong.toLocaleString() + ' VNĐ';
